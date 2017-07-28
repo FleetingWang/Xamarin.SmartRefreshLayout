@@ -1,0 +1,6 @@
+Binding for:
+com.scwang.smartrefresh:SmartRefreshLayout:1.0.3-alpha-2
+
+Dependencies:
+
+SmartRefreshLayout-1.0.3-alpha-2.aar,    Path=C:\Users\wtffl\.gradle\caches\modules-2\files-2.1\com.scwang.smartrefresh\SmartRefreshLayout\1.0.3-alpha-2\5a498f12d03c4d7d185a386c6880b683a6918c8f\SmartRefreshLayout-1.0.3-alpha-2.aar
