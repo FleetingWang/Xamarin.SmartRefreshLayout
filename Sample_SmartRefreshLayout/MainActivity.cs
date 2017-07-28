@@ -5,26 +5,25 @@ using Android.Runtime;
 using Android.Views;
 using Android.Widget;
 using Android.OS;
+using Android.Support.V7.App;
 
 namespace Sample_SmartRefreshLayout
 {
-    [Activity(Label = "Sample_SmartRefreshLayout", MainLauncher = true, Icon = "@drawable/icon")]
-    public class MainActivity : Activity
+    [Activity(Label = "@string/title_activity_index_main", 
+        MainLauncher = true, 
+        Icon = "@mipmap/ic_launcher", 
+        RoundIcon = "@mipmap/ic_launcher",
+        Theme = "@style/AppTheme")]
+    public class MainActivity : AppCompatActivity
     {
-        int count = 1;
 
         protected override void OnCreate(Bundle bundle)
         {
             base.OnCreate(bundle);
 
             // Set our view from the "main" layout resource
-            SetContentView(Resource.Layout.Main);
+            SetContentView(Resource.Layout.activity_index_main);
 
-            // Get our button from the layout resource,
-            // and attach an event to it
-            Button button = FindViewById<Button>(Resource.Id.MyButton);
-
-            button.Click += delegate { button.Text = string.Format("{0} clicks!", count++); };
         }
     }
 }
