@@ -32,7 +32,7 @@ namespace Sample_SmartRefreshLayout.Fragments
                 new ActivityInfo("CodeDefine", "在代码中指定Header和Footer", typeof(AssignCodeUsingActivity)),
                 new ActivityInfo("Listener", "多功能监听器", typeof(ListenerUsingActivity)),
                 //// new ActivityInfo("OverScroll", "越界回弹", typeof(OverScrollUsingActivity)),
-                //new ActivityInfo("NestLayout", "嵌套Layout作为内容", typeof(NestLayoutUsingActivity)),
+                new ActivityInfo("NestLayout", "嵌套Layout作为内容", typeof(NestLayoutUsingActivity)),
             };
             public string Title;
             public string Name;

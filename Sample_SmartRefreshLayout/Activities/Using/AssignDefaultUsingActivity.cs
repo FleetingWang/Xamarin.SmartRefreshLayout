@@ -16,6 +16,7 @@ using Com.Scwang.Smartrefresh.Layout.Constant;
 using Android.Support.V4.Content;
 using Android.Support.V7.Widget;
 using Sample_SmartRefreshLayout.Common;
+using Com.Scwang.Smartrefresh.Layout.Footer;
 
 namespace Sample_SmartRefreshLayout.Activities.Using
 {
@@ -65,6 +66,17 @@ namespace Sample_SmartRefreshLayout.Activities.Using
                 ClassicsHeader header = new ClassicsHeader(context).SetSpinnerStyle(SpinnerStyle.FixedBehind);
                 header.SetPrimaryColors(ContextCompat.GetColor(context, Resource.Color.colorPrimary), ContextCompat.GetColor(context, Android.Resource.Color.White));
                 return header;//指定为经典Header，默认是 贝塞尔雷达Header
+            }
+        }
+
+        private class SimpleDefaultRefreshFooterCreater : Java.Lang.Object, IDefaultRefreshFooterCreater
+        {
+            public IRefreshFooter CreateRefreshFooter(Context context, IRefreshLayout layout)
+            {
+                ClassicsFooter footer = new ClassicsFooter(context);
+                footer.SetBackgroundResource(Android.Resource.Color.White);
+                footer.SetSpinnerStyle(SpinnerStyle.Scale);//设置为拉伸模式
+                return footer;//指定为经典Footer，默认是 BallPulseFooter
             }
         }
     }
