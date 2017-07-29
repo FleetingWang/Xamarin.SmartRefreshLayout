@@ -111,6 +111,7 @@
     <Compile Include="Adapters\BaseListAdapter.cs" />
     <Compile Include="Adapters\BaseRecyclerAdapter.cs" />
     <Compile Include="Adapters\SmartViewHolder.cs" />
+    <Compile Include="Common\CustomSimpleMultiPurposeListener.cs" />
     <Compile Include="Fragments\RefreshPractiveFragment.cs" />
     <Compile Include="Fragments\RefreshStylesFragment.cs" />
     <Compile Include="Fragments\RefreshUsingFragment.cs" />

@@ -36,7 +36,7 @@ namespace Sample_SmartRefreshLayout.Adapters
                 }
             };
 
-            // TODO: 设置水波纹背景
+            // 设置水波纹背景
             if(itemView.Background == null)
             {
                 TypedValue typedValue = new TypedValue();

@@ -27,10 +27,10 @@ namespace Sample_SmartRefreshLayout.Fragments
             public static List<ActivityInfo> List = new List<ActivityInfo>
             {
                 new ActivityInfo("Basic", "基本的使用", typeof(BasicUsingActivity)),
-                //new ActivityInfo("DefaultCreater", "设置全局默认的Header和Footer", typeof(AssignDefaultUsingActivity)),
-                //new ActivityInfo("XmlDefine", "在XML中定义Header和Footer", typeof(AssignXmlUsingActivity)),
-                //new ActivityInfo("CodeDefine", "在代码中指定Header和Footer", typeof(AssignCodeUsingActivity)),
-                //new ActivityInfo("Listener", "多功能监听器", typeof(ListenerUsingActivity)),
+                new ActivityInfo("DefaultCreater", "设置全局默认的Header和Footer", typeof(AssignDefaultUsingActivity)),
+                new ActivityInfo("XmlDefine", "在XML中定义Header和Footer", typeof(AssignXmlUsingActivity)),
+                new ActivityInfo("CodeDefine", "在代码中指定Header和Footer", typeof(AssignCodeUsingActivity)),
+                new ActivityInfo("Listener", "多功能监听器", typeof(ListenerUsingActivity)),
                 //// new ActivityInfo("OverScroll", "越界回弹", typeof(OverScrollUsingActivity)),
                 //new ActivityInfo("NestLayout", "嵌套Layout作为内容", typeof(NestLayoutUsingActivity)),
             };
