@@ -15,17 +15,18 @@ using Java.Lang.Reflect;
 using Com.Scwang.Smartrefresh.Layout.Api;
 using Com.Scwang.Smartrefresh.Layout.Header;
 using Sample_SmartRefreshLayout.Adapters;
+using Sample_SmartRefreshLayout.Activities.Using;
 
 namespace Sample_SmartRefreshLayout.Fragments
 {
     [Register("sample_smartrefreshlayout.fragments.RefreshUsingFragment")]
     public class RefreshUsingFragment : Fragment, AdapterView.IOnItemClickListener
     {
-        private class ActivityInfo : Java.Lang.Object
+        private class ActivityInfo
         {
             public static List<ActivityInfo> List = new List<ActivityInfo>
             {
-                //new ActivityInfo("Basic", "基本的使用", typeof(BasicUsingActivity)),
+                new ActivityInfo("Basic", "基本的使用", typeof(BasicUsingActivity)),
                 //new ActivityInfo("DefaultCreater", "设置全局默认的Header和Footer", typeof(AssignDefaultUsingActivity)),
                 //new ActivityInfo("XmlDefine", "在XML中定义Header和Footer", typeof(AssignXmlUsingActivity)),
                 //new ActivityInfo("CodeDefine", "在代码中指定Header和Footer", typeof(AssignCodeUsingActivity)),
@@ -66,7 +67,7 @@ namespace Sample_SmartRefreshLayout.Fragments
         public void OnItemClick(AdapterView parent, View view, int position, long id)
         {
             ActivityInfo item = ActivityInfo.List[position];
-            if (Activity.Class.IsAssignableFrom(item.Clazz))
+            if (Class.FromType(typeof(Android.App.Activity)).IsAssignableFrom(item.Clazz))
             {
                 StartActivity(new Intent(Context, item.Clazz));
             }
@@ -74,7 +75,7 @@ namespace Sample_SmartRefreshLayout.Fragments
             {
                 try
                 {
-                    Constructor constructor = item.Class.GetConstructor(Context.Class);
+                    Constructor constructor = item.Clazz.GetConstructor(Context.Class);
                     IRefreshHeader header = (IRefreshHeader)constructor.NewInstance(Context);
                     IRefreshLayout layout = (IRefreshLayout)View.FindViewById(Resource.Id.refreshLayout);
                     layout.SetRefreshHeader(header);

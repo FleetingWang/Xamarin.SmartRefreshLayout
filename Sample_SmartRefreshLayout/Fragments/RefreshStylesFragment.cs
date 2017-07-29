@@ -21,7 +21,7 @@ namespace Sample_SmartRefreshLayout.Fragments
     [Register("sample_smartrefreshlayout.fragments.RefreshStylesFragment")]
     public class RefreshStylesFragment : Fragment, AdapterView.IOnItemClickListener
     {
-        private class ActivityInfo : Java.Lang.Object
+        private class ActivityInfo
         {
             public static List<ActivityInfo> List = new List<ActivityInfo>
             {
@@ -85,7 +85,7 @@ namespace Sample_SmartRefreshLayout.Fragments
             {
                 try
                 {
-                    Constructor constructor = item.Class.GetConstructor(Context.Class);
+                    Constructor constructor = item.Clazz.GetConstructor(Context.Class);
                     IRefreshHeader header = (IRefreshHeader)constructor.NewInstance(Context);
                     IRefreshLayout layout = (IRefreshLayout)View.FindViewById(Resource.Id.refreshLayout);
                     layout.SetRefreshHeader(header);

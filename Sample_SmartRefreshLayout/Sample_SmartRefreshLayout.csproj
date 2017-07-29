@@ -100,6 +100,15 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Activities\ExperimentActivity.cs" />
+    <Compile Include="Activities\Using\AssignCodeUsingActivity.cs" />
+    <Compile Include="Activities\Using\AssignDefaultUsingActivity.cs" />
+    <Compile Include="Activities\Using\AssignXmlUsingActivity.cs" />
+    <Compile Include="Activities\Using\BasicUsingActivity.cs" />
+    <Compile Include="Activities\Using\ListenerUsingActivity.cs" />
+    <Compile Include="Activities\Using\NestLayoutUsingActivity.cs" />
+    <Compile Include="Activities\Using\OverScrollUsingActivity.cs" />
+    <Compile Include="Adapters\BaseListAdapter.cs" />
     <Compile Include="Adapters\BaseRecyclerAdapter.cs" />
     <Compile Include="Adapters\SmartViewHolder.cs" />
     <Compile Include="Fragments\RefreshPractiveFragment.cs" />

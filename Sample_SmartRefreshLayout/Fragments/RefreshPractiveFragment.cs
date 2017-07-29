@@ -20,7 +20,7 @@ namespace Sample_SmartRefreshLayout.Fragments
     [Register("sample_smartrefreshlayout.fragments.RefreshPractiveFragment")]
     public class RefreshPractiveFragment: Fragment, AdapterView.IOnItemClickListener
     {
-        private class ActivityInfo : Java.Lang.Object
+        private class ActivityInfo
         {
             public static List<ActivityInfo> List = new List<ActivityInfo>
             {
@@ -67,7 +67,7 @@ namespace Sample_SmartRefreshLayout.Fragments
                 StartActivity(new Intent(Context, item.Clazz));
             }else if (Class.FromType(typeof(IRefreshHeader)).IsAssignableFrom(item.Clazz)) {
                 try {
-                    Constructor constructor = item.Class.GetConstructor(Context.Class);
+                    Constructor constructor = item.Clazz.GetConstructor(Context.Class);
                     IRefreshHeader header = (IRefreshHeader)constructor.NewInstance(Context);
                     IRefreshLayout layout = (IRefreshLayout)View.FindViewById(Resource.Id.refreshLayout);
                     layout.SetRefreshHeader(header);

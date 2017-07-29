@@ -10,6 +10,8 @@ using Android.Support.V4.View;
 using Android.Support.V4.App;
 using System.Collections.Generic;
 using Sample_SmartRefreshLayout.Fragments;
+using static Android.Support.Design.Widget.BottomNavigationView;
+using Java.Lang;
 
 namespace Sample_SmartRefreshLayout
 {
@@ -18,10 +20,31 @@ namespace Sample_SmartRefreshLayout
         Icon = "@mipmap/ic_launcher", 
         RoundIcon = "@mipmap/ic_launcher",
         Theme = "@style/AppTheme")]
-    public class MainActivity : AppCompatActivity
+    public class MainActivity : AppCompatActivity, IOnNavigationItemSelectedListener
     {
-        ViewPager mViewPager;
+        private class CacheFragment
+        {
+            public static CacheFragment[] List = new CacheFragment[]
+            {
+                new CacheFragment(Resource.Id.navigation_practice, typeof(RefreshPractiveFragment)),
+                new CacheFragment(Resource.Id.navigation_style, typeof(RefreshStylesFragment)),
+                new CacheFragment(Resource.Id.navigation_using, typeof(RefreshUsingFragment))
+            };
+            public int MenuId;
+            public Class Clazz;
+            public CacheFragment(int menuId, Type type)
+            {
+                MenuId = menuId;
+                Clazz = Class.FromType(type);
+            }
 
+            private Fragment fragment;
+            public Fragment Fragment
+                => fragment ?? (fragment = Clazz.NewInstance() as Fragment);
+        }
+
+        ViewPager mViewPager;
+        
         protected override void OnCreate(Bundle bundle)
         {
             base.OnCreate(bundle);
@@ -29,31 +52,40 @@ namespace Sample_SmartRefreshLayout
             // Set our view from the "main" layout resource
             SetContentView(Resource.Layout.activity_index_main);
 
-            var fragmentsDic = new CacheFragment[]
-            {
-                new CacheFragment(this, Resource.Id.navigation_practice, typeof(RefreshPractiveFragment)),
-                new CacheFragment(this, Resource.Id.navigation_style, typeof(RefreshStylesFragment)),
-                new CacheFragment(this, Resource.Id.navigation_using, typeof(RefreshUsingFragment))
-            };
-
             mViewPager = FindViewById<ViewPager>(Resource.Id.viewPager);
-            mViewPager.Adapter = new SimpleFragmentStatePagerAdapter(SupportFragmentManager, fragmentsDic);
+            mViewPager.Adapter = new SimpleFragmentStatePagerAdapter(SupportFragmentManager, CacheFragment.List);
 
             var navigation = FindViewById<BottomNavigationView>(Resource.Id.navigation);
-            navigation.NavigationItemSelected += (sender, e) => {
-                mViewPager.SetCurrentItem(e.Item.ItemId, true);
+            navigation.SetOnNavigationItemSelectedListener(this);
+
+            mViewPager.PageSelected += (sender, e) => {
+                navigation.SelectedItemId = CacheFragment.List[e.Position].MenuId;
             };
 
-            navigation.SelectedItemId = Resource.Id.navigation_style;
+            navigation.SelectedItemId = Resource.Id.navigation_using;
+        }
+
+        public bool OnNavigationItemSelected(IMenuItem item)
+        {
+            int position = 1;
+            for(var i = 0;i< CacheFragment.List.Length; i++)
+            {
+                var cacheFragment = CacheFragment.List[i];
+                if(cacheFragment.MenuId == item.ItemId)
+                {
+                    position = i;
+                    break;
+                }
+            }
+            mViewPager.SetCurrentItem(position, true);
+            return true;
         }
 
         private class SimpleFragmentStatePagerAdapter: FragmentStatePagerAdapter
         {
             public readonly CacheFragment[] CacheFragments;
-
             public SimpleFragmentStatePagerAdapter(FragmentManager fm,
-                CacheFragment[] cacheFragments) 
-                : base(fm)
+                CacheFragment[] cacheFragments): base(fm)
             {
                 CacheFragments = cacheFragments;
             }
@@ -65,24 +97,7 @@ namespace Sample_SmartRefreshLayout
 
             public override int Count => CacheFragments.Length;
         }
-
-        private class CacheFragment
-        {
-            public int MenuId;
-            public Type Type;
-            private Context _context;
-            public CacheFragment(Context context, int menuId, Type type)
-            {
-                _context = context;
-                MenuId = menuId;
-                Type = type;
-            }
-            private Fragment fragment;
-            public Fragment Fragment 
-                => fragment ?? (fragment = Fragment.Instantiate(_context, Java.Lang.Class.FromType(Type).Name));
-        }
-
-
+        
     }
 }
 
