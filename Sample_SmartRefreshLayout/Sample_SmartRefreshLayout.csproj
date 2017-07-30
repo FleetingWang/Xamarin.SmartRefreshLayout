@@ -101,6 +101,19 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Activities\ExperimentActivity.cs" />
+    <Compile Include="Activities\Style\BezierStyleActivity.cs" />
+    <Compile Include="Activities\Style\CircleStyleActivity.cs" />
+    <Compile Include="Activities\Style\ClassicsStyleActivity.cs" />
+    <Compile Include="Activities\Style\DeliveryStyleActivity.cs" />
+    <Compile Include="Activities\Style\DropboxStyleActivity.cs" />
+    <Compile Include="Activities\Style\FlyRefreshStyleActivity.cs" />
+    <Compile Include="Activities\Style\FunGameBattleCityStyleActivity.cs" />
+    <Compile Include="Activities\Style\MaterialStyleActivity.cs" />
+    <Compile Include="Activities\Style\PhoenixStyleActivity.cs" />
+    <Compile Include="Activities\Style\StoreHouseStyleActivity.cs" />
+    <Compile Include="Activities\Style\TaurusStyleActivity.cs" />
+    <Compile Include="Activities\Style\WaterDropStyleActivity.cs" />
+    <Compile Include="Activities\Style\WaveSwipStyleActivity.cs" />
     <Compile Include="Activities\Using\AssignCodeUsingActivity.cs" />
     <Compile Include="Activities\Using\AssignDefaultUsingActivity.cs" />
     <Compile Include="Activities\Using\AssignXmlUsingActivity.cs" />
