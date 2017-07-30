@@ -174,7 +174,7 @@ namespace Sample_SmartRefreshLayout.Utils
             Class layoutParams = Class.ForName("android.view.MiuiWindowManager$LayoutParams");
             Field field = layoutParams.GetField("EXTRA_FLAG_STATUS_BAR_DARK_MODE");
             darkModeFlag = field.GetInt(layoutParams);
-            Method extraFlagField = clazz.GetMethod("setExtraFlags", Class.FromType(typeof(int)), Class.FromType(typeof(int)));
+            Method extraFlagField = clazz.GetMethod("setExtraFlags", Class.FromType(typeof(Java.Lang.Integer)), Class.FromType(typeof(Java.Lang.Integer)));
             extraFlagField.Invoke(window, darkmode ? darkModeFlag : 0, darkModeFlag);
             return true;
         } catch (Java.Lang.Exception e) {
@@ -194,7 +194,7 @@ namespace Sample_SmartRefreshLayout.Utils
     public static bool isMIUI6Later() {
         try {
             Class clz = Class.ForName("android.os.SystemProperties");
-            Method mtd = clz.GetMethod("get", Class.FromType(typeof(string)));
+            Method mtd = clz.GetMethod("get", Class.FromType(typeof(Java.Lang.String)));
                 string val = (string) mtd.Invoke(null, "ro.miui.ui.version.name");
             val = val.Replace("[vV]", "");
             int version = Integer.ParseInt(val);

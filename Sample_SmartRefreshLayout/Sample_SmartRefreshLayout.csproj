@@ -101,6 +101,7 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Activities\ExperimentActivity.cs" />
+    <Compile Include="Activities\Practive\RepastPracticeActivity.cs" />
     <Compile Include="Activities\Style\BezierStyleActivity.cs" />
     <Compile Include="Activities\Style\CircleStyleActivity.cs" />
     <Compile Include="Activities\Style\ClassicsStyleActivity.cs" />
@@ -140,6 +141,9 @@
     <None Include="packages.config" />
     <None Include="Resources\AboutResources.txt" />
     <None Include="Assets\AboutAssets.txt" />
+    <AndroidResource Include="Resources\layout\activity_practice_repast.axml">
+      <SubType>Designer</SubType>
+    </AndroidResource>
   </ItemGroup>
   <ItemGroup>
     <AndroidResource Include="Resources\values\Strings.xml" />
@@ -148,6 +152,22 @@
     <None Include="Properties\AndroidManifest.xml" />
   </ItemGroup>
   <ItemGroup>
+    <ProjectReference Include="..\AndroidBindings\Binding_AndroidGifDrawable\Binding_AndroidGifDrawable.csproj">
+      <Project>{c20c59f7-ecaf-44ce-9cab-bdfb899e74d8}</Project>
+      <Name>Binding_AndroidGifDrawable</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\AndroidBindings\Binding_CircleimageView\Binding_CircleimageView.csproj">
+      <Project>{f14b5579-ef48-4a2f-9624-96737b66af9b}</Project>
+      <Name>Binding_CircleimageView</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\AndroidBindings\Binding_RealtimeblurView\Binding_RealtimeblurView.csproj">
+      <Project>{fe5beb88-ac5a-4c90-8992-8e2fbc0c7685}</Project>
+      <Name>Binding_RealtimeblurView</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\AndroidBindings\Binding_RecyclerViewAnimators\Binding_RecyclerViewAnimators.csproj">
+      <Project>{690aed37-c970-4be7-80a8-2bbc187eff63}</Project>
+      <Name>Binding_RecyclerViewAnimators</Name>
+    </ProjectReference>
     <ProjectReference Include="..\Binding_SmartRefreshFooter\Binding_SmartRefreshFooter.csproj">
       <Project>{c3c6ac38-97c8-4429-bd25-d0a5337ba121}</Project>
       <Name>Binding_SmartRefreshFooter</Name>
@@ -159,10 +179,6 @@
     <ProjectReference Include="..\Binding_SmartRefreshLayout\Binding_SmartRefreshLayout.csproj">
       <Project>{cb0691e1-c57c-48f3-b563-3a4c4f2cdb77}</Project>
       <Name>Binding_SmartRefreshLayout</Name>
-    </ProjectReference>
-    <ProjectReference Include="AndroidBindings\Binding_RecyclerViewAnimators\Binding_RecyclerViewAnimators.csproj">
-      <Project>{690AED37-C970-4BE7-80A8-2BBC187EFF63}</Project>
-      <Name>Binding_RecyclerViewAnimators</Name>
     </ProjectReference>
   </ItemGroup>
   <ItemGroup>

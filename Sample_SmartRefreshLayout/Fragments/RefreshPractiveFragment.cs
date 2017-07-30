@@ -14,6 +14,7 @@ using Com.Scwang.Smartrefresh.Layout.Api;
 using Java.Lang.Reflect;
 using Java.Lang;
 using Com.Scwang.Smartrefresh.Layout.Header;
+using Sample_SmartRefreshLayout.Activities.Practive;
 
 namespace Sample_SmartRefreshLayout.Fragments
 {
@@ -24,7 +25,7 @@ namespace Sample_SmartRefreshLayout.Fragments
         {
             public static List<ActivityInfo> List = new List<ActivityInfo>
             {
-                //new ActivityInfo("Repast", "餐饮美食-简单自定义Header-外边距magin", typeof(RepastPracticeActivity)),
+                new ActivityInfo("Repast", "餐饮美食-简单自定义Header-外边距magin", typeof(RepastPracticeActivity)),
                 //new ActivityInfo("Profile", "个人中心-OverScroll", typeof(ProfilePracticeActivity)),
                 //new ActivityInfo("Webview", "网页引用-WebView", typeof(WebviewPracticeActivity)),
                 //new ActivityInfo("FeedList", "微博列表-智能识别", typeof(FeedlistPracticeActivity)),

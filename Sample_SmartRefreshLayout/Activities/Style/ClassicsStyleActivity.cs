@@ -89,7 +89,9 @@ namespace Sample_SmartRefreshLayout.Activities.Style
             if (isFirstEnter)
             {
                 isFirstEnter = false;
-                mRefreshLayout.AutoRefresh();//第一次进入触发自动刷新，演示效果
+                //触发上啦加载
+                mRefreshLayout.AutoLoadmore();
+                //通过多功能监听接口实现 在第一次加载完成之后 自动刷新
                 mRefreshLayout.SetOnMultiPurposeListener(new CustomSimpleMultiPurposeListener());
             }
         }
