@@ -1,0 +1,6 @@
+Binding for:
+pl.droidsonroids.gif:android-gif-drawable:1.2.3
+
+Dependencies:
+
+android-gif-drawable-1.2.3.aar,    Path=C:\Users\wtffl\.gradle\caches\modules-2\files-2.1\pl.droidsonroids.gif\android-gif-drawable\1.2.3\d042885246c9e229a9ad22849b1419d658e48ef6\android-gif-drawable-1.2.3.aar
