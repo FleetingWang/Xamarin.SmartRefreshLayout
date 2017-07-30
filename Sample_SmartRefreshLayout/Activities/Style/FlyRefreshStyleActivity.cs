@@ -29,6 +29,8 @@ using ImageView = Android.Widget.ImageView;
 using Com.Scwang.Smartrefresh.Layout.Listener;
 using Sample_SmartRefreshLayout.Utils;
 
+using JP.Wasabeef.Recyclerview.Animators;
+
 namespace Sample_SmartRefreshLayout.Activities.Style
 {
     [Activity(Label = "@string/title_activity_fly_refresh")]
@@ -100,8 +102,7 @@ namespace Sample_SmartRefreshLayout.Activities.Style
             mListView = FindViewById<RecyclerView>(Resource.Id.recyclerView);
             mListView.SetLayoutManager(mLayoutManager);
             mListView.SetAdapter(mAdapter);
-            // TODO: SampleItemAnimator
-            //mListView.SetItemAnimator(new SampleItemAnimator());
+            mListView.SetItemAnimator(new SampleItemAnimator());
             mToolbarLayout = FindViewById<CollapsingToolbarLayout>(Resource.Id.toolbar_layout);
             mActionButton = FindViewById<FloatingActionButton>(Resource.Id.fab);
             //设置点击 ActionButton 时候触发自动刷新 并改变主题颜色
@@ -343,10 +344,40 @@ namespace Sample_SmartRefreshLayout.Activities.Style
             }
         }
 
-        //public class SampleItemAnimator: BaseItemAnimator
-        //{
+        public class SampleItemAnimator : BaseItemAnimator
+        {
+            protected override void PreAnimateAddImpl(RecyclerView.ViewHolder holder)
+            {
+                View icon = holder.ItemView.FindViewById(Resource.Id.icon);
+                icon.RotationX = 30;
+                View right = holder.ItemView.FindViewById(Resource.Id.right);
+                right.PivotX = 0;
+                right.PivotY = 0;
+                right.RotationY = 90;
+            }
 
-        //}
+            protected override void AnimateAddImpl(RecyclerView.ViewHolder holder)
+            {
+                View target = holder.ItemView;
+                View icon = target.FindViewById(Resource.Id.icon);
+                Animator swing = ObjectAnimator.OfFloat(icon, "rotationX", 45, 0);
+                swing.SetInterpolator(new OvershootInterpolator(5));
+
+                View right = holder.ItemView.FindViewById(Resource.Id.right);
+                Animator rotateIn = ObjectAnimator.OfFloat(right, "rotationY", 90, 0);
+                rotateIn.SetInterpolator(new DecelerateInterpolator());
+
+                AnimatorSet animator = new AnimatorSet();
+                animator.SetDuration(AddDuration);
+                animator.PlayTogether(swing, rotateIn);
+
+                animator.Start();
+            }
+
+            protected override void AnimateRemoveImpl(RecyclerView.ViewHolder p0)
+            {
+            }
+        }
 
         private class ElasticOutInterpolator : Java.Lang.Object, IInterpolator
         {
