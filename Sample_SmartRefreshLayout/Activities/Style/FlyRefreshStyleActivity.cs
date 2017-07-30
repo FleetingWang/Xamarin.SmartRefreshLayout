@@ -84,14 +84,12 @@ namespace Sample_SmartRefreshLayout.Activities.Style
              * 关键代码-结束
              ************************************************************/
 
-
             mRefreshLayout = FindViewById(Resource.Id.refreshLayout) as IRefreshLayout;
             if (isFirstEnter)
             {
                 isFirstEnter = false;
                 mRefreshLayout.AutoRefresh();//第一次进入触发自动刷新，演示效果
             }
-
 
             /**
              * 初始化列表数据
