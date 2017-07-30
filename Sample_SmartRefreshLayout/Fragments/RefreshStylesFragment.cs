@@ -27,9 +27,9 @@ namespace Sample_SmartRefreshLayout.Fragments
         {
             public static List<ActivityInfo> List = new List<ActivityInfo>
             {
-                //new ActivityInfo("Delivery", Resource.String.title_activity_style_delivery, typeof(DeliveryStyleActivity)),
-                //new ActivityInfo("Dropbox", Resource.String.title_activity_style_dropbox, typeof(DropboxStyleActivity)),
-                //new ActivityInfo("FlyRefresh", Resource.String.title_activity_style_flyrefresh, typeof(FlyRefreshStyleActivity)),
+                new ActivityInfo("Delivery", Resource.String.title_activity_style_delivery, typeof(DeliveryStyleActivity)),
+                new ActivityInfo("Dropbox", Resource.String.title_activity_style_dropbox, typeof(DropboxStyleActivity)),
+                new ActivityInfo("FlyRefresh", Resource.String.title_activity_style_flyrefresh, typeof(FlyRefreshStyleActivity)),
                 //new ActivityInfo("WaveSwipe", Resource.String.title_activity_style_wave_swip, typeof(WaveSwipStyleActivity)),
                 //new ActivityInfo("WaterDrop", Resource.String.title_activity_style_water_drop, typeof(WaterDropStyleActivity)),
                 //new ActivityInfo("Material", Resource.String.title_activity_style_material, typeof(MaterialStyleActivity)),
