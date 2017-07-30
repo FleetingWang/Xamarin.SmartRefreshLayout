@@ -63,7 +63,7 @@ namespace Sample_SmartRefreshLayout.Fragments
         public void OnItemClick(AdapterView parent, View view, int position, long id)
         {
             ActivityInfo item = ActivityInfo.List[position];
-            if (Activity.Class.IsAssignableFrom(item.Clazz)) {
+            if (Class.FromType(typeof(Android.App.Activity)).IsAssignableFrom(item.Clazz)) {
                 StartActivity(new Intent(Context, item.Clazz));
             }else if (Class.FromType(typeof(IRefreshHeader)).IsAssignableFrom(item.Clazz)) {
                 try {

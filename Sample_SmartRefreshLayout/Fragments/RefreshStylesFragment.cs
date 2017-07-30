@@ -15,6 +15,8 @@ using Java.Lang.Reflect;
 using Com.Scwang.Smartrefresh.Layout.Api;
 using Com.Scwang.Smartrefresh.Layout.Header;
 using Sample_SmartRefreshLayout.Adapters;
+using Sample_SmartRefreshLayout.Activities.Style;
+using Sample_SmartRefreshLayout.Activities;
 
 namespace Sample_SmartRefreshLayout.Fragments
 {
@@ -33,7 +35,7 @@ namespace Sample_SmartRefreshLayout.Fragments
                 //new ActivityInfo("Material", Resource.String.title_activity_style_material, typeof(MaterialStyleActivity)),
                 //new ActivityInfo("Phoenix", Resource.String.title_activity_style_phoenix, typeof(PhoenixStyleActivity)),
                 //new ActivityInfo("Taurus", Resource.String.title_activity_style_taurus, typeof(TaurusStyleActivity)),
-                //new ActivityInfo("Bezier", Resource.String.title_activity_style_bezier, typeof(BezierStyleActivity)),
+                new ActivityInfo("Bezier", Resource.String.title_activity_style_bezier, typeof(BezierStyleActivity)),
                 //new ActivityInfo("Circle", Resource.String.title_activity_style_circle, typeof(CircleStyleActivity)),
                 //new ActivityInfo("FunGameHitBlock", Resource.String.title_activity_style_fungame_hitblock, typeof(FunGameHitBlockStyleActivity)),
                 //new ActivityInfo("FunGameBattleCity", Resource.String.title_activity_style_fungame_battlecity, typeof(FunGameBattleCityStyleActivity)),
@@ -70,14 +72,14 @@ namespace Sample_SmartRefreshLayout.Fragments
             }
 
             view.FindViewById<View>(Resource.Id.toolbar).LongClick += (sender, e) => {
-                //StartActivity(new Intent(Context, typeof(ExperimentActivity)));
+                StartActivity(new Intent(Context, typeof(ExperimentActivity)));
             };
         }
 
         public void OnItemClick(AdapterView parent, View view, int position, long id)
         {
             ActivityInfo item = ActivityInfo.List[position];
-            if (Activity.Class.IsAssignableFrom(item.Clazz))
+            if (Class.FromType(typeof(Android.App.Activity)).IsAssignableFrom(item.Clazz))
             {
                 StartActivity(new Intent(Context, item.Clazz));
             }

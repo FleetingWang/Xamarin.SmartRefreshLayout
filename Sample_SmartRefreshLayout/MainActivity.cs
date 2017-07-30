@@ -62,7 +62,7 @@ namespace Sample_SmartRefreshLayout
                 navigation.SelectedItemId = CacheFragment.List[e.Position].MenuId;
             };
 
-            navigation.SelectedItemId = Resource.Id.navigation_using;
+            navigation.SelectedItemId = Resource.Id.navigation_style;
         }
 
         public bool OnNavigationItemSelected(IMenuItem item)
