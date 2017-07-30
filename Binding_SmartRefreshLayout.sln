@@ -11,7 +11,15 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Binding_SmartRefreshHeader"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Binding_SmartRefreshFooter", "Binding_SmartRefreshFooter\Binding_SmartRefreshFooter.csproj", "{C3C6AC38-97C8-4429-BD25-D0A5337BA121}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Binding_RecyclerViewAnimators", "Sample_SmartRefreshLayout\AndroidBindings\Binding_RecyclerViewAnimators\Binding_RecyclerViewAnimators.csproj", "{690AED37-C970-4BE7-80A8-2BBC187EFF63}"
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "AndroidBindings", "AndroidBindings", "{AC131005-70EA-4243-B7F2-EB1B71CFA04A}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Binding_AndroidGifDrawable", "AndroidBindings\Binding_AndroidGifDrawable\Binding_AndroidGifDrawable.csproj", "{C20C59F7-ECAF-44CE-9CAB-BDFB899E74D8}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Binding_RecyclerViewAnimators", "AndroidBindings\Binding_RecyclerViewAnimators\Binding_RecyclerViewAnimators.csproj", "{690AED37-C970-4BE7-80A8-2BBC187EFF63}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Binding_RealtimeblurView", "AndroidBindings\Binding_RealtimeblurView\Binding_RealtimeblurView.csproj", "{FE5BEB88-AC5A-4C90-8992-8E2FBC0C7685}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Binding_CircleimageView", "AndroidBindings\Binding_CircleimageView\Binding_CircleimageView.csproj", "{F14B5579-EF48-4A2F-9624-96737B66AF9B}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -37,12 +45,30 @@ Global
 		{C3C6AC38-97C8-4429-BD25-D0A5337BA121}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{C3C6AC38-97C8-4429-BD25-D0A5337BA121}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{C3C6AC38-97C8-4429-BD25-D0A5337BA121}.Release|Any CPU.Build.0 = Release|Any CPU
+		{C20C59F7-ECAF-44CE-9CAB-BDFB899E74D8}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{C20C59F7-ECAF-44CE-9CAB-BDFB899E74D8}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{C20C59F7-ECAF-44CE-9CAB-BDFB899E74D8}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{C20C59F7-ECAF-44CE-9CAB-BDFB899E74D8}.Release|Any CPU.Build.0 = Release|Any CPU
 		{690AED37-C970-4BE7-80A8-2BBC187EFF63}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
 		{690AED37-C970-4BE7-80A8-2BBC187EFF63}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{690AED37-C970-4BE7-80A8-2BBC187EFF63}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{690AED37-C970-4BE7-80A8-2BBC187EFF63}.Release|Any CPU.Build.0 = Release|Any CPU
+		{FE5BEB88-AC5A-4C90-8992-8E2FBC0C7685}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{FE5BEB88-AC5A-4C90-8992-8E2FBC0C7685}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{FE5BEB88-AC5A-4C90-8992-8E2FBC0C7685}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{FE5BEB88-AC5A-4C90-8992-8E2FBC0C7685}.Release|Any CPU.Build.0 = Release|Any CPU
+		{F14B5579-EF48-4A2F-9624-96737B66AF9B}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{F14B5579-EF48-4A2F-9624-96737B66AF9B}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{F14B5579-EF48-4A2F-9624-96737B66AF9B}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{F14B5579-EF48-4A2F-9624-96737B66AF9B}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{C20C59F7-ECAF-44CE-9CAB-BDFB899E74D8} = {AC131005-70EA-4243-B7F2-EB1B71CFA04A}
+		{690AED37-C970-4BE7-80A8-2BBC187EFF63} = {AC131005-70EA-4243-B7F2-EB1B71CFA04A}
+		{FE5BEB88-AC5A-4C90-8992-8E2FBC0C7685} = {AC131005-70EA-4243-B7F2-EB1B71CFA04A}
+		{F14B5579-EF48-4A2F-9624-96737B66AF9B} = {AC131005-70EA-4243-B7F2-EB1B71CFA04A}
 	EndGlobalSection
 EndGlobal
