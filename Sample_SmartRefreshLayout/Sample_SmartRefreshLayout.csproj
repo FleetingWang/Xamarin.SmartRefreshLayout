@@ -131,6 +131,7 @@
     <Compile Include="MainActivity.cs" />
     <Compile Include="Resources\Resource.Designer.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Utils\StatusBarUtil.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="GettingStarted.Xamarin" />
@@ -156,6 +157,10 @@
     <ProjectReference Include="..\Binding_SmartRefreshLayout\Binding_SmartRefreshLayout.csproj">
       <Project>{cb0691e1-c57c-48f3-b563-3a4c4f2cdb77}</Project>
       <Name>Binding_SmartRefreshLayout</Name>
+    </ProjectReference>
+    <ProjectReference Include="AndroidBindings\Binding_RecyclerViewAnimators\Binding_RecyclerViewAnimators.csproj">
+      <Project>{690AED37-C970-4BE7-80A8-2BBC187EFF63}</Project>
+      <Name>Binding_RecyclerViewAnimators</Name>
     </ProjectReference>
   </ItemGroup>
   <ItemGroup>

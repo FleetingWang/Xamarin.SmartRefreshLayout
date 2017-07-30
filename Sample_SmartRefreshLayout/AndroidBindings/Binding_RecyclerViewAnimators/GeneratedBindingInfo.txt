@@ -1,0 +1,17 @@
+Binding for:
+ jp.wasabeef:recyclerview-animators:2.2.6
+
+Dependencies:
+
+recyclerview-animators-2.2.6.aar,    Path=C:\Users\wtffl\.gradle\caches\modules-2\files-2.1\jp.wasabeef\recyclerview-animators\2.2.6\c836b80e17615d4c45863203495da31f5633c393\recyclerview-animators-2.2.6.aar
+	animated-vector-drawable-25.3.0.aar,    Path=D:\android-sdk\extras\android\m2repository\com\android\support\animated-vector-drawable\25.3.0\animated-vector-drawable-25.3.0.aar
+	appcompat-v7-25.3.0.aar,    Path=D:\android-sdk\extras\android\m2repository\com\android\support\appcompat-v7\25.3.0\appcompat-v7-25.3.0.aar
+	recyclerview-v7-25.3.0.aar,    Path=D:\android-sdk\extras\android\m2repository\com\android\support\recyclerview-v7\25.3.0\recyclerview-v7-25.3.0.aar
+	support-annotations-25.3.0.jar,    Path=D:\android-sdk\extras\android\m2repository\com\android\support\support-annotations\25.3.0\support-annotations-25.3.0.jar
+	support-compat-25.3.0.aar,    Path=D:\android-sdk\extras\android\m2repository\com\android\support\support-compat\25.3.0\support-compat-25.3.0.aar
+	support-core-ui-25.3.0.aar,    Path=D:\android-sdk\extras\android\m2repository\com\android\support\support-core-ui\25.3.0\support-core-ui-25.3.0.aar
+	support-core-utils-25.3.0.aar,    Path=D:\android-sdk\extras\android\m2repository\com\android\support\support-core-utils\25.3.0\support-core-utils-25.3.0.aar
+	support-fragment-25.3.0.aar,    Path=D:\android-sdk\extras\android\m2repository\com\android\support\support-fragment\25.3.0\support-fragment-25.3.0.aar
+	support-media-compat-25.3.0.aar,    Path=D:\android-sdk\extras\android\m2repository\com\android\support\support-media-compat\25.3.0\support-media-compat-25.3.0.aar
+	support-v4-25.3.0.aar,    Path=D:\android-sdk\extras\android\m2repository\com\android\support\support-v4\25.3.0\support-v4-25.3.0.aar
+	support-vector-drawable-25.3.0.aar,    Path=D:\android-sdk\extras\android\m2repository\com\android\support\support-vector-drawable\25.3.0\support-vector-drawable-25.3.0.aar
