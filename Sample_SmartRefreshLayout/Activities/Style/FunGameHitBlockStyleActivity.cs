@@ -18,21 +18,19 @@ using Sample_SmartRefreshLayout.Adapters;
 
 namespace Sample_SmartRefreshLayout.Activities.Style
 {
-    [Activity(Label = "@string/title_activity_style_circle")]
-    public class CircleStyleActivity : AppCompatActivity, IOnItemClickListener
+    [Activity(Label = "@string/title_activity_style_fungame_hitblock")]
+    public class FunGameHitBlockStyleActivity : AppCompatActivity, IOnItemClickListener
     {
         private class Item
         {
             // switch case
-            public const string 内容不偏移 = "内容不偏移";
-            public const string 内容跟随偏移 = "内容跟随偏移";
+            public const string 默认主题 = "默认主题";
             public const string 橙色主题 = "橙色主题";
             public const string 红色主题 = "红色主题";
             public const string 绿色主题 = "绿色主题";
             public const string 蓝色主题 = "蓝色主题";
             public static List<Item> List = new List<Item>{
-                new Item(内容不偏移, "下拉的时候列表内容停留在原位不动"),
-                new Item(内容跟随偏移, "下拉的时候列表内容跟随向下偏移"),
+                new Item(默认主题, "更改为默认主题颜色"),
                 new Item(橙色主题, "更改为橙色主题颜色"),
                 new Item(红色主题, "更改为红色主题颜色"),
                 new Item(绿色主题, "更改为绿色主题颜色"),
@@ -53,8 +51,17 @@ namespace Sample_SmartRefreshLayout.Activities.Style
         protected override void OnCreate(Bundle savedInstanceState)
         {
             base.OnCreate(savedInstanceState);
-            SetContentView(Resource.Layout.activity_style_circle);
+            SetContentView(Resource.Layout.activity_style_fungame_hitblock);
 
+            var toolbar = FindViewById<Toolbar>(Resource.Id.toolbar);
+            toolbar.NavigationClick += (sender, e) => { Finish(); };
+
+            var refreshLayout = FindViewById(Resource.Id.refreshLayout) as IRefreshLayout;
+            if (isFirstEnter)
+            {
+                isFirstEnter = false;
+                refreshLayout.AutoRefresh();//第一次进入触发自动刷新，演示效果
+            }
 
             mToolbar = FindViewById<Toolbar>(Resource.Id.toolbar);
             mToolbar.NavigationClick += (sender, e) => { Finish(); };
@@ -73,15 +80,13 @@ namespace Sample_SmartRefreshLayout.Activities.Style
             recyclerView.SetAdapter(new CustomBaseRecyclerAdapter(Item.List, Android.Resource.Layout.SimpleListItem2, this));
         }
 
+
         public void OnItemClick(AdapterView parent, View view, int position, long id)
         {
             switch (Item.List[position].Title)
             {
-                case Item.内容不偏移:
-                    mRefreshLayout.SetEnableHeaderTranslationContent(false);
-                    break;
-                case Item.内容跟随偏移:
-                    mRefreshLayout.SetEnableHeaderTranslationContent(true);
+                case Item.默认主题:
+                    mRefreshLayout.SetPrimaryColorsId(Android.Resource.Color.White, Android.Resource.Color.Black);
                     break;
                 case Item.蓝色主题:
                     setThemeColor(Resource.Color.colorPrimary, Resource.Color.colorPrimaryDark);

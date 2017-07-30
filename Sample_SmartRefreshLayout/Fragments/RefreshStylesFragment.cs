@@ -36,11 +36,11 @@ namespace Sample_SmartRefreshLayout.Fragments
                 new ActivityInfo("Phoenix", Resource.String.title_activity_style_phoenix, typeof(PhoenixStyleActivity)),
                 new ActivityInfo("Taurus", Resource.String.title_activity_style_taurus, typeof(TaurusStyleActivity)),
                 new ActivityInfo("Bezier", Resource.String.title_activity_style_bezier, typeof(BezierStyleActivity)),
-                //new ActivityInfo("Circle", Resource.String.title_activity_style_circle, typeof(CircleStyleActivity)),
-                //new ActivityInfo("FunGameHitBlock", Resource.String.title_activity_style_fungame_hitblock, typeof(FunGameHitBlockStyleActivity)),
-                //new ActivityInfo("FunGameBattleCity", Resource.String.title_activity_style_fungame_battlecity, typeof(FunGameBattleCityStyleActivity)),
-                //new ActivityInfo("StoreHouse", Resource.String.title_activity_style_storehouse, typeof(StoreHouseStyleActivity)),
-                //new ActivityInfo("Classics", Resource.String.title_activity_style_classics, typeof(ClassicsStyleActivity)),
+                new ActivityInfo("Circle", Resource.String.title_activity_style_circle, typeof(CircleStyleActivity)),
+                new ActivityInfo("FunGameHitBlock", Resource.String.title_activity_style_fungame_hitblock, typeof(FunGameHitBlockStyleActivity)),
+                new ActivityInfo("FunGameBattleCity", Resource.String.title_activity_style_fungame_battlecity, typeof(FunGameBattleCityStyleActivity)),
+                new ActivityInfo("StoreHouse", Resource.String.title_activity_style_storehouse, typeof(StoreHouseStyleActivity)),
+                new ActivityInfo("Classics", Resource.String.title_activity_style_classics, typeof(ClassicsStyleActivity)),
             };
             public string Title;
             public int NameId;
