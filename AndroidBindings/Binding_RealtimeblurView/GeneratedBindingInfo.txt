@@ -1,0 +1,6 @@
+Binding for:
+com.github.mmin18:realtimeblurview:1.0.6
+
+Dependencies:
+
+realtimeblurview-1.0.6.aar,    Path=C:\Users\wtffl\.gradle\caches\modules-2\files-2.1\com.github.mmin18\realtimeblurview\1.0.6\241bb48f0e078fbebac37c2dbc55c8e46c43696f\realtimeblurview-1.0.6.aar
