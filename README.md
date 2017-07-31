@@ -53,11 +53,11 @@ Xamarin.Android binding for [scwang90/SmartRefreshLayout](https://github.com/scw
  #### Xamarin.Android绑定使用的VS插件
  [Xamarin.GradleBindings](https://github.com/EgorBo/Xamarin.GradleBindings)
  #### 示例绑定及使用的组件：
- [android-gif-drawable](https://github.com/koral--/android-gif-drawable) 绑定：[Binding_AndroidGifDrawable](https://github.com/wtffly/Xamarin.SmartRefreshLayout/tree/master/AndroidBindings/Binding_AndroidGifDrawable)
- [CircleImageView](https://github.com/hdodenhof/CircleImageView) 绑定：[Binding_CircleimageView](https://github.com/wtffly/Xamarin.SmartRefreshLayout/tree/master/AndroidBindings/Binding_CircleimageView)
- [FlycoRoundView](https://github.com/H07000223/FlycoRoundView) 绑定：[Binding_FlycoRoundViewLib](https://github.com/wtffly/Xamarin.SmartRefreshLayout/tree/master/AndroidBindings/Binding_FlycoRoundViewLib)
- [RealtimeBlurView](https://github.com/mmin18/RealtimeBlurView) 绑定：[Binding_RealtimeblurView](https://github.com/wtffly/Xamarin.SmartRefreshLayout/tree/master/AndroidBindings/Binding_RealtimeblurView)
- [recyclerview-animators](https://github.com/wasabeef/recyclerview-animators) 绑定：[Binding_RecyclerViewAnimators](https://github.com/wtffly/Xamarin.SmartRefreshLayout/tree/master/AndroidBindings/Binding_RecyclerViewAnimators)
+ [android-gif-drawable](https://github.com/koral--/android-gif-drawable) 绑定：[Binding_AndroidGifDrawable](https://github.com/wtffly/Xamarin.SmartRefreshLayout/tree/master/AndroidBindings/Binding_AndroidGifDrawable)  
+ [CircleImageView](https://github.com/hdodenhof/CircleImageView) 绑定：[Binding_CircleimageView](https://github.com/wtffly/Xamarin.SmartRefreshLayout/tree/master/AndroidBindings/Binding_CircleimageView)  
+ [FlycoRoundView](https://github.com/H07000223/FlycoRoundView) 绑定：[Binding_FlycoRoundViewLib](https://github.com/wtffly/Xamarin.SmartRefreshLayout/tree/master/AndroidBindings/Binding_FlycoRoundViewLib)  
+ [RealtimeBlurView](https://github.com/mmin18/RealtimeBlurView) 绑定：[Binding_RealtimeblurView](https://github.com/wtffly/Xamarin.SmartRefreshLayout/tree/master/AndroidBindings/Binding_RealtimeblurView)  
+ [recyclerview-animators](https://github.com/wasabeef/recyclerview-animators) 绑定：[Binding_RecyclerViewAnimators](https://github.com/wtffly/Xamarin.SmartRefreshLayout/tree/master/AndroidBindings/Binding_RecyclerViewAnimators)  
 
  License
 -------
