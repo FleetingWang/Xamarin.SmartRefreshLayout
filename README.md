@@ -1,48 +1,77 @@
-# Xamarin.SmartRefreshLayout
+ï»¿# Xamarin.SmartRefreshLayout
 Xamarin.Android binding for [scwang90/SmartRefreshLayout](https://github.com/scwang90/SmartRefreshLayout)
-## AndroidÖÇÄÜÏÂÀ­Ë¢ĞÂ¿ò¼Ü-SmartRefreshLayout
-### Ô­°æ½éÉÜ: [English](https://raw.githubusercontent.com/scwang90/SmartRefreshLayout/master/README_EN.md) | [ÖĞÎÄ](https://raw.githubusercontent.com/scwang90/SmartRefreshLayout/master/README.md)
-Ê¾ÀıAppÒÑ¸ÄĞ´ÎªXamarin.Android£¬[´úÂë](https://github.com/wtffly/Xamarin.SmartRefreshLayout/tree/master/Sample)
-#### ÏîÄ¿ÑİÊ¾
+## Androidæ™ºèƒ½ä¸‹æ‹‰åˆ·æ–°æ¡†æ¶-SmartRefreshLayout
+### åŸç‰ˆä»‹ç»: [English](https://raw.githubusercontent.com/scwang90/SmartRefreshLayout/master/README_EN.md) | [ä¸­æ–‡](https://raw.githubusercontent.com/scwang90/SmartRefreshLayout/master/README.md)
+ç¤ºä¾‹Appå·²æ”¹å†™ä¸ºXamarin.Androidï¼Œ[ä»£ç ](https://github.com/wtffly/Xamarin.SmartRefreshLayout/tree/master/Sample)
+#### é¡¹ç›®æ¼”ç¤º
 ![](art/gif_practive_weibo.gif) ![](art/gif_practive_feedlist.gif)
 
 ![](art/gif_practive_repast.gif) ![](art/gif_practive_profile.gif)
 
-#### ·ç¸ñÑİÊ¾
+#### é£æ ¼æ¼”ç¤º
 ![](art/gif_Delivery.gif) ![](art/gif_Dropbox.gif)
 
-ÉÏÃæÕâÁ½¸öÊÇÎÒ×Ô¼ºÊµÏÖµÄHeader£¬Éè¼ÆÀ´×Ô£º[Refresh-your-delivery](https://dribbble.com/shots/2753803-Refresh-your-delivery)£¬[Dropbox-Refresh](https://dribbble.com/shots/3470499-Dropbox-Refresh)
+ä¸Šé¢è¿™ä¸¤ä¸ªæ˜¯æˆ‘è‡ªå·±å®ç°çš„Headerï¼Œè®¾è®¡æ¥è‡ªï¼š[Refresh-your-delivery](https://dribbble.com/shots/2753803-Refresh-your-delivery)ï¼Œ[Dropbox-Refresh](https://dribbble.com/shots/3470499-Dropbox-Refresh)
 
-ÏÂÃæµÄHeaderÊÇÎÒ°ÑgithubÉÏÆäËüÓÅĞãµÄHeader½øĞĞµÄÕûÀíºÍ¼¯ºÏ»¹ÓĞÓÅ»¯£º
+ä¸‹é¢çš„Headeræ˜¯æˆ‘æŠŠgithubä¸Šå…¶å®ƒä¼˜ç§€çš„Headerè¿›è¡Œçš„æ•´ç†å’Œé›†åˆè¿˜æœ‰ä¼˜åŒ–ï¼š
 
 ![](art/gif_BezierRadar.gif) ![](art/gif_Circle.gif)
 
-ÕûÀíÀ´×Ô£º[TwinklingRefreshLayout](https://github.com/lcodecorex/TwinklingRefreshLayout/blob/master/art/gif_recyclerview2.gif)£¬[Pull Down To Refresh](https://dribbble.com/shots/1797373-Pull-Down-To-Refresh)
+æ•´ç†æ¥è‡ªï¼š[TwinklingRefreshLayout](https://github.com/lcodecorex/TwinklingRefreshLayout/blob/master/art/gif_recyclerview2.gif)ï¼Œ[Pull Down To Refresh](https://dribbble.com/shots/1797373-Pull-Down-To-Refresh)
 
 ![](art/gif_FlyRefresh.gif) ![](art/gif_Classics.gif)
 
-ÕûÀíÀ´×Ô£º[FlyRefresh](https://github.com/race604/FlyRefresh)£¬[ClassicsHeader](#1)
+æ•´ç†æ¥è‡ªï¼š[FlyRefresh](https://github.com/race604/FlyRefresh)ï¼Œ[ClassicsHeader](#1)
 
 ![](art/gif_Phoenix.gif) ![](art/gif_Taurus.gif)
 
-ÕûÀíÀ´×Ô£º[Yalantis/Phoenix](https://github.com/Yalantis/Phoenix)£¬[Yalantis/Taurus](https://github.com/Yalantis/Taurus)
+æ•´ç†æ¥è‡ªï¼š[Yalantis/Phoenix](https://github.com/Yalantis/Phoenix)ï¼Œ[Yalantis/Taurus](https://github.com/Yalantis/Taurus)
 
 ![](art/gif_BattleCity.gif) ![](art/gif_HitBlock.gif)
 
-ÕûÀíÀ´×Ô£º[FunGame/BattleCity](https://github.com/Hitomis/FunGameRefresh)£¬[FunGame/HitBlock](https://github.com/Hitomis/FunGameRefresh)
+æ•´ç†æ¥è‡ªï¼š[FunGame/BattleCity](https://github.com/Hitomis/FunGameRefresh)ï¼Œ[FunGame/HitBlock](https://github.com/Hitomis/FunGameRefresh)
 
 ![](art/gif_WaveSwipe.gif) ![](art/gif_Material.gif)
 
-ÕûÀíÀ´×Ô£º[WaveSwipeRefreshLayout](https://github.com/recruit-lifestyle/WaveSwipeRefreshLayout)£¬[MaterialHeader](https://developer.android.com/reference/android/support/v4/widget/SwipeRefreshLayout.html)
+æ•´ç†æ¥è‡ªï¼š[WaveSwipeRefreshLayout](https://github.com/recruit-lifestyle/WaveSwipeRefreshLayout)ï¼Œ[MaterialHeader](https://developer.android.com/reference/android/support/v4/widget/SwipeRefreshLayout.html)
 
 ![](art/gif_StoreHouse.gif) ![](art/gif_WaterDrop.gif)
 
-ÕûÀíÀ´×Ô£º[Ultra-Pull-To-Refresh](https://github.com/liaohuqiu/android-Ultra-Pull-To-Refresh)£¬[WaterDrop](https://github.com/THEONE10211024/WaterDropListView)
+æ•´ç†æ¥è‡ªï¼š[Ultra-Pull-To-Refresh](https://github.com/liaohuqiu/android-Ultra-Pull-To-Refresh)ï¼Œ[WaterDrop](https://github.com/THEONE10211024/WaterDropListView)
 
 
-¿´µ½ÕâÃ´¶àìÅ¿áµÄHeader£¬ÊÇ²»ÊÇ¾õµÃºÜ°ô£¿ÕâÊ±Äã»òĞí»áµ£ĞÄÕâÃ´¶àµÄHeader¼¯³ÉÔÚÒ»Æğ£¬µ«ÊÇÆ½Ê±Ö»»áÓÃµ½Ò»¸ö£¬ÊÇ²»ÊÇÒªÒıÈëºÜ¶àÎŞÓÃµÄ´úÂëºÍ×ÊÔ´£¿  
-Çë·ÅĞÄ£¬ÎÒÒÑ¾­°ÑË¢ĞÂ²¼¾Ö·Ö³ÉÈı¸ö°üÀ²£¬ÓÃµ½µÄÊ±ºò×ÔĞĞÒıÓÃ¾Í¿ÉÒÔÀ²£¡
+çœ‹åˆ°è¿™ä¹ˆå¤šç‚«é…·çš„Headerï¼Œæ˜¯ä¸æ˜¯è§‰å¾—å¾ˆæ£’ï¼Ÿè¿™æ—¶ä½ æˆ–è®¸ä¼šæ‹…å¿ƒè¿™ä¹ˆå¤šçš„Headeré›†æˆåœ¨ä¸€èµ·ï¼Œä½†æ˜¯å¹³æ—¶åªä¼šç”¨åˆ°ä¸€ä¸ªï¼Œæ˜¯ä¸æ˜¯è¦å¼•å…¥å¾ˆå¤šæ— ç”¨çš„ä»£ç å’Œèµ„æºï¼Ÿ  
+è¯·æ”¾å¿ƒï¼Œæˆ‘å·²ç»æŠŠåˆ·æ–°å¸ƒå±€åˆ†æˆä¸‰ä¸ªåŒ…å•¦ï¼Œç”¨åˆ°çš„æ—¶å€™è‡ªè¡Œå¼•ç”¨å°±å¯ä»¥å•¦ï¼
 
- - SmartRefreshLayout Ë¢ĞÂ²¼¾ÖºËĞÄÊµÏÖ£¬×Ô´øClassicsHeader£¨¾­µä£©¡¢BezierRadarHeader£¨±´Èû¶ûÀ×´ï£©Á½¸ö Header.
- - SmartRefreshHeader ¸÷ÖÖHeaderµÄ¼¯³É£¬³ıÁËLayout×Ô´øµÄHeader£¬ÆäËü¶¼ÔÚÕâ¸ö°üÖĞ.
- - SmartRefreshFooter ¸÷ÖÖFooterµÄ¼¯³É£¬³ıÁËLayout×Ô´øµÄFooter£¬ÆäËü¶¼ÔÚÕâ¸ö°üÖĞ.
+ - SmartRefreshLayout åˆ·æ–°å¸ƒå±€æ ¸å¿ƒå®ç°ï¼Œè‡ªå¸¦ClassicsHeaderï¼ˆç»å…¸ï¼‰ã€BezierRadarHeaderï¼ˆè´å¡å°”é›·è¾¾ï¼‰ä¸¤ä¸ª Header.
+ - SmartRefreshHeader å„ç§Headerçš„é›†æˆï¼Œé™¤äº†Layoutè‡ªå¸¦çš„Headerï¼Œå…¶å®ƒéƒ½åœ¨è¿™ä¸ªåŒ…ä¸­.
+ - SmartRefreshFooter å„ç§Footerçš„é›†æˆï¼Œé™¤äº†Layoutè‡ªå¸¦çš„Footerï¼Œå…¶å®ƒéƒ½åœ¨è¿™ä¸ªåŒ…ä¸­.
+
+ ### æ„Ÿè°¢
+ #### åŸä½œè€…
+ [scwang90/SmartRefreshLayout](https://github.com/scwang90/SmartRefreshLayout)
+ #### Xamarin.Androidç»‘å®šä½¿ç”¨çš„VSæ’ä»¶
+ [Xamarin.GradleBindings](https://github.com/EgorBo/Xamarin.GradleBindings)
+ #### ç¤ºä¾‹ç»‘å®šåŠä½¿ç”¨çš„ç»„ä»¶ï¼š
+ [android-gif-drawable](https://github.com/koral--/android-gif-drawable) ç»‘å®šï¼š[Binding_AndroidGifDrawable](https://github.com/wtffly/Xamarin.SmartRefreshLayout/tree/master/AndroidBindings/Binding_AndroidGifDrawable)
+ [CircleImageView](https://github.com/hdodenhof/CircleImageView) ç»‘å®šï¼š[Binding_CircleimageView](https://github.com/wtffly/Xamarin.SmartRefreshLayout/tree/master/AndroidBindings/Binding_CircleimageView)
+ [FlycoRoundView](https://github.com/H07000223/FlycoRoundView) ç»‘å®šï¼š[Binding_FlycoRoundViewLib](https://github.com/wtffly/Xamarin.SmartRefreshLayout/tree/master/AndroidBindings/Binding_FlycoRoundViewLib)
+ [RealtimeBlurView](https://github.com/mmin18/RealtimeBlurView) ç»‘å®šï¼š[Binding_RealtimeblurView](https://github.com/wtffly/Xamarin.SmartRefreshLayout/tree/master/AndroidBindings/Binding_RealtimeblurView)
+ [recyclerview-animators](https://github.com/wasabeef/recyclerview-animators) ç»‘å®šï¼š[Binding_RecyclerViewAnimators](https://github.com/wtffly/Xamarin.SmartRefreshLayout/tree/master/AndroidBindings/Binding_RecyclerViewAnimators)
+
+ License
+-------
+
+    Copyright 2017 wtffly
+
+    Licensed under the Apache License, Version 2.0 (the "License");
+    you may not use this file except in compliance with the License.
+    You may obtain a copy of the License at
+
+       http://www.apache.org/licenses/LICENSE-2.0
+
+    Unless required by applicable law or agreed to in writing, software
+    distributed under the License is distributed on an "AS IS" BASIS,
+    WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+    See the License for the specific language governing permissions and
+    limitations under the License.
