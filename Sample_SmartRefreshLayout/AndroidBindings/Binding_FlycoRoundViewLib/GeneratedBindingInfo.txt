@@ -1,0 +1,6 @@
+Binding for:
+com.flyco.roundview:FlycoRoundView_Lib:1.1.4@aar
+
+Dependencies:
+
+FlycoRoundView_Lib-1.1.4.aar,    Path=C:\Users\wtffl\.gradle\caches\modules-2\files-2.1\com.flyco.roundview\FlycoRoundView_Lib\1.1.4\dc763bbb119e282450d3ef3140255ca65e8c702d\FlycoRoundView_Lib-1.1.4.aar
