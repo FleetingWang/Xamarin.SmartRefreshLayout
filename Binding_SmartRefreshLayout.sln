@@ -5,7 +5,7 @@ VisualStudioVersion = 15.0.26430.16
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Binding_SmartRefreshLayout", "Binding_SmartRefreshLayout\Binding_SmartRefreshLayout.csproj", "{CB0691E1-C57C-48F3-B563-3A4C4F2CDB77}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Sample_SmartRefreshLayout", "Sample_SmartRefreshLayout\Sample_SmartRefreshLayout.csproj", "{B8E35521-BCF9-4F20-AA39-82A86AC50CE2}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Sample", "Sample\Sample.csproj", "{B8E35521-BCF9-4F20-AA39-82A86AC50CE2}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Binding_SmartRefreshHeader", "Binding_SmartRefreshHeader\Binding_SmartRefreshHeader.csproj", "{B1176459-1280-4062-A96F-29ECB490B372}"
 EndProject
@@ -21,7 +21,7 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Binding_RealtimeblurView", 
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Binding_CircleimageView", "AndroidBindings\Binding_CircleimageView\Binding_CircleimageView.csproj", "{F14B5579-EF48-4A2F-9624-96737B66AF9B}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Binding_FlycoRoundViewLib", "Sample_SmartRefreshLayout\AndroidBindings\Binding_FlycoRoundViewLib\Binding_FlycoRoundViewLib.csproj", "{3EF690C5-30E8-4111-B561-0D43638ADBEE}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Binding_FlycoRoundViewLib", "AndroidBindings\Binding_FlycoRoundViewLib\Binding_FlycoRoundViewLib.csproj", "{3EF690C5-30E8-4111-B561-0D43638ADBEE}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
