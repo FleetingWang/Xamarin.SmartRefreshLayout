@@ -49,7 +49,7 @@ namespace Sample.Utils
             toAppendTo = base.Format(date, toAppendTo, pos);
 
             Calendar otherCalendar = Calendar;
-            Calendar todayCalendar = (Calendar)otherCalendar.Class.NewInstance();
+            Calendar todayCalendar = Calendar.Instance;
 
             int hour = otherCalendar.Get(CalendarField.HourOfDay);
 

@@ -168,6 +168,10 @@
       <Project>{f14b5579-ef48-4a2f-9624-96737b66af9b}</Project>
       <Name>Binding_CircleimageView</Name>
     </ProjectReference>
+    <ProjectReference Include="..\AndroidBindings\Binding_FlycoRoundViewLib\Binding_FlycoRoundViewLib.csproj">
+      <Project>{3ef690c5-30e8-4111-b561-0d43638adbee}</Project>
+      <Name>Binding_FlycoRoundViewLib</Name>
+    </ProjectReference>
     <ProjectReference Include="..\AndroidBindings\Binding_RealtimeblurView\Binding_RealtimeblurView.csproj">
       <Project>{fe5beb88-ac5a-4c90-8992-8e2fbc0c7685}</Project>
       <Name>Binding_RealtimeblurView</Name>
@@ -187,10 +191,6 @@
     <ProjectReference Include="..\Binding_SmartRefreshLayout\Binding_SmartRefreshLayout.csproj">
       <Project>{cb0691e1-c57c-48f3-b563-3a4c4f2cdb77}</Project>
       <Name>Binding_SmartRefreshLayout</Name>
-    </ProjectReference>
-    <ProjectReference Include="..\AndroidBindings\Binding_FlycoRoundViewLib\Binding_FlycoRoundViewLib.csproj">
-      <Project>{3EF690C5-30E8-4111-B561-0D43638ADBEE}</Project>
-      <Name>Binding_FlycoRoundViewLib</Name>
     </ProjectReference>
   </ItemGroup>
   <ItemGroup>
